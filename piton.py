@@ -24,7 +24,7 @@ if 'win' in sys.platform:
 def nosignal():
     url = 'https://raw.githubusercontent.com/askarsetiawan/no-signal/main/'
     m3u8_get = requests.get(f"{url}/index.m3u8").text
-    for ts in ['01.m3u8', '02.m3u8']:
+    for ts in ['260.m3u8', '360.m3u8', '480.m3u8', '720.m3u8', '1080.m3u8']:
         m3u8_get = m3u8_get.replace(ts, f"{url}/{ts}")
     return m3u8_get
 
